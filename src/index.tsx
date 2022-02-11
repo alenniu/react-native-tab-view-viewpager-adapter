@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Keyboard, StyleProp, ViewStyle } from 'react-native';
-import ViewPager from '@react-native-community/viewpager';
+import PagerView from 'react-native-pager-view';
 import Animated from 'react-native-reanimated';
 
 import {
@@ -11,7 +11,7 @@ import {
   EventEmitterProps,
 } from 'react-native-tab-view/src/types';
 
-const AnimatedViewPager = Animated.createAnimatedComponent(ViewPager);
+const AnimatedViewPager = Animated.createAnimatedComponent(PagerView);
 
 type Props<T extends Route> = PagerCommonProps & {
   onIndexChange: (index: number) => void;
